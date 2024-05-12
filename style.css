@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+:root{
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+}
+.navigations{
+    width: 80%;
+    margin: 20px auto;
+}
+.navigations h6{
+    font-size: 50px;
+}
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    line-height: 50px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.navlinks{
+    display: flex;
+}
+.cons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.cons img{
+    margin-left: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 10px;
+    color: var(--Dark-grayish-blue);
+    content: '';
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: var(--Soft-red);
+    width: 100%;
+}
+.container{
+    margin: 0 auto;
+    width: 80%;
+    
+    border-radius: 2px;
+    line-height: 30px
+}
+.refs{
+    text-align: center;
+    justify-content: center;
+}
+.upperSection{
+    display: flex;
+    flex-direction: row;
+    flex: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 10px;
+}
+
+.rightSection img{
+    justify-content: center;
+}
+.sections{
+    display: flex;
+    flex-direction: row;
+    flex-direction: 1fr 1fr;
+    gap: 30px;
+}
+.side-bar p{
+    margin-right: 30px;
+    margin-top: 20px;
+}
+.side-bar{
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.side-bar a{
+    text-decoration: none;
+    background-color: rgb(186, 57, 57);
+    padding: 10px 20px 10px 20px;
+    border: 1px solid black;
+}
+.sections h3{
+    font-size: 30px;
+    line-height: 60px;
+}
+.leftSection{
+    background-color: rgba(184, 103, 103, 0.6);
+    padding: 25px;
+}
+.leftSection h1{
+    margin: 30px 0 20px 10px;
+}
+.leftSection h2{
+    margin-bottom: 10px;
+}
+.leftSection p{
+    margin-bottom: 10px;
+}
+.lowerSection{
+    display: flex;
+    flex-direction: row;
+    flex: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 40px;
+}
+.oneSections{
+    color: var(--Soft-orange);
+    background-color: #fff;
+    
+}
+.twoSections{
+    color: var(--Off-white);
+}
+.thirdSections{
+    color: var(--Grayish-blue);
+    
+}
+
+.oneSections,
+.twoSections,
+.thirdSections{
+    padding: 20px 20px 20px 5px;
+
+}
+.oneSections,
+.twoSections,
+.thirdSections p{
+    color: black;
+
+}
+.control{
+    display: flex;
+    flex-direction: row;
+    flex: 1fr 1fr;
+}
+.oneSections img,
+.twoSections img,
+.thirdSections img{
+    height: 180px;
+    width: 100px;
+}
+.profile{
+    margin-left: 10px;
+}
+.lowerSection h4{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: var(--Dark-grayish-blue);
+}
+.lowerSection h5{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+@media screen  and (max-width:900px){
+    .upperSection,
+    .lowerSection{
+        display: block;
+        margin: 0 auto;
+        gap: 30px;
+        
+    }
+    .rightSection img{
+        height: 300px;
+        width: 300px;
+    }
+    .leftSection{
+        padding: 25px;
+        margin-top: 30px;
+    }
+    .lowerSection{
+        margin-top: 30px;
+        
+    }
+    .oneSections,
+    .twoSections,
+    .thirdSections{
+        margin-bottom: 20px;
+        padding: 20px 5px 20px 5px;
+    }
+    .oneSections img,
+    .twoSections img,
+    .thirdSections img{
+        height: 120px;
+        width: 80px;
+    }
+    .lowerSection h4{
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: lighter;
+    }
+    .lowerSection h5{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    .lowerSection p{
+        font-size: 14px;
+    }
+    .sections{
+        display: block;
+        line-height: 40px;
+        padding: 10px;
+    }
+    .sections h3{
+        font-size: 30px;
+    }
+    .side-bar{
+        padding-bottom: 20px;
+        padding-top: 20px;
+        margin-left: 0;
+    }
+    .side-bar a{
+        margin-top: 30px;
+    }
+    nav{
+        padding-inline: 1rem;
+    }
+    .navlinks{
+        display: none;
+    }
+    .menu{
+
+        display: flex;
+    }
+    a:hover,a.active{
+        text-decoration: underline;
+        color: white;
+    }
+}
